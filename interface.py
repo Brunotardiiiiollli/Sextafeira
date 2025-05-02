@@ -2,8 +2,12 @@ import tkinter as tk
 from PIL import Image, ImageTk
 import subprocess
 
+from playsound import playsound
+
 def iniciar_jarvis():
+    playsound("audio/voz_jarvis.mp3")  # toca o áudio de boas-vindas
     subprocess.Popen(["python", "jarvis_core.py"])
+
 
 # Criação da janela
 janela = tk.Tk()
