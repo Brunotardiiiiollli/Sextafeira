@@ -4,3 +4,4 @@ speechrecognition
 pyaudio
 python-dotenv
 Pillow
+playsound
