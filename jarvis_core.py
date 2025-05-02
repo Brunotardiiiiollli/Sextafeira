@@ -25,14 +25,27 @@ def listen():
         except:
             return ""
 
+# Espera a palavra de ativação "sexta-feira"
 while True:
     user_input = listen()
     print(f"Você disse: {user_input}")
-       # 🔧 Comandos personalizados do sistema
-    if "abrir navegador" in user_input.lower():
-        os.system("start chrome")
-        speak("Abrindo navegador, senhor.")
+    if "sexta-feira" in user_input.lower():
+        speak("Olá, senhor. Protocolo Sexta-feira ativado. Como posso te ajudar?")
+        break
+
+# Após ativar, entra no modo comandos contínuo
+while True:
+    user_input = listen()
+    print(f"Você disse: {user_input}")
+
+    if "abrir youtube" in user_input.lower():
+        os.system("start https://www.youtube.com")
+        speak("Abrindo YouTube, senhor.")
         continue
+
+    # Aqui você pode colocar outros comandos...
+
+
 
     if "abrir youtube" in user_input.lower():
         os.system("start https://www.youtube.com")
