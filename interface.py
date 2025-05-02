@@ -55,3 +55,8 @@ rodape = tk.Label(
 rodape.pack(side="bottom", pady=20)
 
 janela.mainloop()
+
+import subprocess
+
+# Executa o jarvis_core.py ao abrir a interface
+subprocess.Popen(["python", "jarvis_core.py"])
